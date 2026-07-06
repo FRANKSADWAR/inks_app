@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-11 00:25:02.772772",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_parameter",
+  "specification",
+  "analysis"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_parameter",
+   "fieldtype": "Data",
+   "label": "Test Parameter"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "analysis",
+   "fieldtype": "Data",
+   "label": "Analysis"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-06 09:51:38.681624",
+ "modified_by": "Administrator",
+ "module": "Inks App",
+ "name": "COA Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
