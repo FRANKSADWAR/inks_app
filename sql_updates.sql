@@ -73,5 +73,45 @@ UPDATE `tabWork Order Item`
 	SET custom_batch_no = batch_no
 	WHERE batch_no IS NOT NULL AND batch_no != '';
 
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabStock Entry` SET custom_customer = custom_customer_name
+	WHERE custom_customer IS NOT NULL AND custom_customer !='';
+
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabWork Order` SET custom_work_order_batch = work_order_batch
+	WHERE work_order_batch IS NOT NULL AND work_order_batch !='';
+
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabWork Order` SET custom_item_batch_number = item_batch_number
+	WHERE item_batch_number IS NOT NULL AND item_batch_number !='';
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabWork Order` SET custom_quality_inspection_template = quality_inspection_template
+	WHERE quality_inspection_template IS NOT NULL AND quality_inspection_template !='';
+
+SET SQL_SAFE_UPDATES =0;
+	UPDATE `tabWork Order` SET custom_certificate_of_analysis_template = certificate_of_analysis_template
+	WHERE certificate_of_analysis_template IS NOT NULL AND certificate_of_analysis_template !='';
+
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabPurchase Invoice` SET custom_etr_serial_number = etr_serial_number
+	WHERE etr_serial_number IS NOT NULL AND etr_serial_number !='';
+
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabSales Invoice` SET custom_etr_serial_number = etr_serial_number
+	WHERE etr_serial_number IS NOT NULL AND etr_serial_number !='';
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabSales Invoice` SET custom_cu_link = cu_link
+	WHERE cu_link IS NOT NULL AND cu_link !='';
+	
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabSales Invoice` SET 
+
 
 
