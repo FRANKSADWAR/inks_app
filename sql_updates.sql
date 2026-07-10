@@ -23,7 +23,6 @@ SET SQL_SAFE_UPDATES = 0;
 	pack_type IS NOT NULL AND pack_type != '';
 
 
-
 SET SQL_SAFE_UPDATES=0;
 	UPDATE `tabSales Invoice Item`
 	SET custom_packaging = packaging WHERE
@@ -73,6 +72,7 @@ UPDATE `tabWork Order Item`
 	SET custom_batch_no = batch_no
 	WHERE batch_no IS NOT NULL AND batch_no != '';
 
+-- Is this really needed here
 SET SQL_SAFE_UPDATES = 0;
 	UPDATE `tabStock Entry` SET custom_customer = custom_customer_name
 	WHERE custom_customer IS NOT NULL AND custom_customer !='';
@@ -111,7 +111,13 @@ SET SQL_SAFE_UPDATES = 0;
 	
 
 SET SQL_SAFE_UPDATES = 0;
-	UPDATE `tabSales Invoice` SET 
+	UPDATE `tabSales Invoice` SET custom_cu_invoice_date = cu_invoice_date
+	WHERE cu_invoice_date IS NOT NULL AND cu_invoice_date != '';
+
+SET SQL_SAFE_UPDATES = 0;
+	UPDATE `tabSales Invoice` SET custom_cu_invoice_number = cu_invoice_number
+	WHERE cu_invoice_number IS NOT NULL AND cu_invoice_number != '';
+
 
 
 
