@@ -17,11 +17,6 @@ SET SQL_SAFE_UPDATES = 0;
 	SET custom_packaging = packaging WHERE 
 	packaging IS NOT NULL AND packaging != '';
 
-SET SQL_SAFE_UPDATES = 0;
-	UPDATE `tabDelivery Note Item`
-	SET custom_pack_type = pack_type WHERE 
-	pack_type IS NOT NULL AND pack_type != '';
-
 
 SET SQL_SAFE_UPDATES=0;
 	UPDATE `tabSales Invoice Item`
@@ -50,8 +45,7 @@ UPDATE `tabCustomer`
 
 UPDATE `tabSupplier`
     SET custom_contact_person_mobile = contact_person_mobile WHERE 
-    contact_person_mobile IS NOT NULL AND contact_person_mobile != '' AND 
-    custom_contact_person_mobile IS NULL;
+    contact_person_mobile IS NOT NULL AND contact_person_mobile != '';
 
 
 SET SQL_SAFE_UPDATES=0; 
